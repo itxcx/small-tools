@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+#-*-coding:utf-8
+
+import sys
+if __name__ == '__main__':
+    try:
+        utf_file = open(sys.argv[1], 'rU')
+        gbk_file = open(sys.argv[1] + '.txt', 'w')
+    except IndexError as error_info:
+        print error_info
+        exit(1)
+    except IOError as error_info:
+        print error_info
+        exit(1)
+
+    for x in utf_file:
+        line = unicode(x.strip('\n'), 'UTF-8') + u'\r\n'
+        gbk_file.write(line.encode('gb2312'))
+    gbk_file.close()
+    utf_file.close()
+

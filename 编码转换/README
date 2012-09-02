@@ -1,0 +1,9 @@
+这是两个编码转换程序
+它们能够将Windows和Linux平台的纯文本文件进行转换
+它们的工作是编码转换和换行符转换。
+其中，u2w是将Linux平台的UTF-8编码纯文本文件转成Windows平台的gb2312编码的txt文件
+w2u是将Windows平台的纯文本文件转成Linux平台UTF-8编码的纯文本文件
+
+目前尚未发现BUG，已在Linux平台测试通过。如果有什么问题，请发送邮件给我：
+YUCOAT<thlgood@yucoat.com>
+2012-9-2

@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+#-*- coding:utf-8 -*-
+'''
+把Windows平台的纯文本文件专成Linux平台的纯文本文件。
+主要的转换包括编码和换行
+
+'''
+import sys
+if __name__ == '__main__':
+    try:
+        gbk_file = open(sys.argv[1], 'rU')
+        utf_file = open(sys.argv[1] + '.utf', 'w')
+    except IndexError as error_info:
+        print error_info
+        exit(1)
+    except IOError as error_info:
+        print error_info
+        exit(1)
+
+    for x in gbk_file:
+        ctt = unicode(x.strip('\r\n'), 'gb2312') + u'\n'
+        utf_file.write(ctt.encode('UTF-8'))
+    utf_file.close()
+    gbk_file.close()
+

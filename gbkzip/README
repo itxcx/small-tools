@@ -1,0 +1,14 @@
+这是一个Python脚本，它的功能是解压在Windows平台压缩的zip文件。
+它能够自动将gbk,gb2312编码转换成UTF-8编码
+
+作者：YUCOAT
+日期：2012-9-28
+邮箱：yucoat^yucoat.com
+
+目前没有发现BUG，如果你发现了BUG，请给我发邮件
+
+使用：
+ gbkzip < xxx.zip >
+注意：
+它只能解压，不能压缩，没有任何选项，任何gbkzip --help之类的用法都是错误的！
+

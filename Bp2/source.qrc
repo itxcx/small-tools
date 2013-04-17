@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>img/internet.png</file>
+        <file>img/my_videos_2.png</file>
+        <file>img/emblem-sound.svg</file>
+    </qresource>
+</RCC>

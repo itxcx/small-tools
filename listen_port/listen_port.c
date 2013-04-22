@@ -16,6 +16,8 @@ const char p[] = \
 "Usage: "
 "listen_port <port>\n"
 "                      --By YUCOAT\n";
+
+//string to int
 int strtoint(const char* str)
 {
     int value = 0;
@@ -34,6 +36,8 @@ int strtoint(const char* str)
         return -1;
     return value;
 }
+
+
 int main(int argc, char *argv[])
 {
     if (argc != 2)

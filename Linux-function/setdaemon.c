@@ -39,8 +39,10 @@ void setdaemon()
     open("/dev/null", O_RDWR);
 }
 
+/*
 int main()
 {
     setdaemon();
     return 0;
 }
+*/
